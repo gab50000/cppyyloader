@@ -3,10 +3,10 @@ import os
 import cppyy
 
 
-LIB_PATH = os.environ.get("CPPYY_LIB_PATH")
+LIBRARY_PATH = os.environ.get("CPPYY_LIB_PATH")
 INCLUDE_PATH = os.environ.get("CPPYY_INCLUDE_PATH")
 
-if not LIB_PATH:
+if not LIBRARY_PATH:
     raise RuntimeError(
         "Environment variable CPPYY_LIB_PATH not set!"
         "Please specify the location of the library you want to load."
